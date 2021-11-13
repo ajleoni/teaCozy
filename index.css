@@ -8,25 +8,68 @@ body {
 header {
     height: 69px;
     border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    top: 62px;
 }
 
 #logo {
     height: 50px;
-    margin-left:10px;
     display: inline;
+    margin: 10px 10px ;   
 }
 
+nav {
+    margin: 20px 20px;
+    float: right;
+}
 
 nav, nav div, .navLink {
     display:inline;
 }
 
-#mission img {
-    height: 700px;
+.navLink {
+    margin-left: 10px;
 }
 
+nav a {
+    color:seashell;
+}
+
+#missionPicture img {
+    display: flex;
+    justify-content: center;
+}
+
+#tagline
+{
+    text-align: center;
+    position: relative;
+    top:-550px;
+    background-color: black;
+    padding: 5px 0px;
+}
+
+#productIntro h4, h2 {
+    text-align: center;
+}
+
+#gallery p {
+    text-align: center;
+}
 
 .imageBlock img {
 width: 300px;
 height: 200px;
+}
+
+.container {
+    width: 1200px;
 }
