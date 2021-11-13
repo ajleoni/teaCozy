@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+    opacity:0.9;
+}
+
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
+#logo {
+    height: 50px;
+    margin-left:10px;
+    display: inline;
+}
+
+
+nav, nav div, .navLink {
+    display:inline;
+}
+
+#mission img {
+    height: 700px;
+}
+
+
+.imageBlock img {
+width: 300px;
+height: 200px;
+}
