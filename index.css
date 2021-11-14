@@ -2,7 +2,9 @@ body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     color: seashell;
-    opacity:0.9;
+    opacity: 0.8;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 header {
@@ -17,7 +19,7 @@ header {
 
 main {
     position: relative;
-    top: 62px;
+    top: 69px;
 }
 
 #logo {
@@ -26,16 +28,28 @@ main {
     margin: 10px 10px ;   
 }
 
+#navList {
+    display: inline;
+    position: relative;
+    overflow:hidden;
+    width: 100%;
+}
+
 nav {
-    margin: 20px 20px;
+    margin: 8px 20px;
     float: right;
 }
 
-nav, nav div, .navLink {
+nav ul, nav li {
     display:inline;
 }
 
-.navLink {
+nav ul {
+    float: right;
+    padding: 0;
+}
+
+nav Li {
     margin-left: 10px;
 }
 
@@ -43,26 +57,52 @@ nav a {
     color:seashell;
 }
 
-#missionPicture img {
-    display: flex;
-    justify-content: center;
+#mission {
+    position: relative;
+    width: 100%;
 }
+
+#missionPicture {
+    height: 700px;
+    background-image: url("img/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 #tagline
 {
     text-align: center;
-    position: relative;
-    top:-550px;
+    position: absolute;
+    bottom:50%;
+    width: 100%;
     background-color: black;
     padding: 5px 0px;
 }
 
-#productIntro h4, h2 {
+
+#products {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#productIntro h4, #productIntro h2 {
     text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #gallery p {
     text-align: center;
+}
+
+.imageBlock {
+    width: 300px;
 }
 
 .imageBlock img {
@@ -70,6 +110,49 @@ width: 300px;
 height: 200px;
 }
 
-.container {
-    width: 1200px;
+#locations {
+    position:relative;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#locationPicture {
+    height: 500px;
+    background-image: url("img/img-locations-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#locationList {
+    position: absolute;
+    top:100px;
+    width: 100%;
+}
+
+#locationList h2 {
+    text-align: center;
+}
+
+#locales {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.locationBlock {
+    background-color: black;
+    width: 300px;
+}
+
+.locationBlock h3, .locationBlock p {
+    text-align: center;
+}
+
+#contact h4, h5 {
+    text-align: center;
+}
+
+footer {
+    height: 40px;
+    margin-left: 20px;
 }
