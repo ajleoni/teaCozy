@@ -162,15 +162,20 @@ footer {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
 
     nav li {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 
     #logo {
-        height: 35px;
+        height: 30px;
     }
+
+    nav {
+        margin: 8px 10px;
+    }
+    
 
 #locationPicture {
     height: 700px;
